@@ -19,7 +19,7 @@ function useSongInfo() {
                             Authorization: `Bearer ${spotifyApi.getAccessToken()}`,
                         }
                     }
-                ).then(res => res.json());
+                ).then(res => res.text());
                 setSongInfo(trackInfo);
             }
         }
